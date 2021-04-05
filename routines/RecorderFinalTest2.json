@@ -1,0 +1,70 @@
+{
+    "meta": {
+        "routine name": "RecorderFinalTest2",
+        "window name": 0,
+        "window hwnd": 131736,
+        "date of creation": "04/02/2021, 01:05:49"
+    },
+    "events": [
+        {
+            "time": 1.0880622863769531,
+            "type": "click",
+            "button": "Button.left",
+            "pos": [
+                1164,
+                331
+            ]
+        },
+        {
+            "time": 1.9741129875183105,
+            "type": "click",
+            "button": "Button.left",
+            "pos": [
+                1089,
+                382
+            ]
+        },
+        {
+            "time": 2.7841594219207764,
+            "type": "click",
+            "button": "Button.left",
+            "pos": [
+                1060,
+                424
+            ]
+        },
+        {
+            "type": "search image",
+            "number of images": 1,
+            "paths": "C:\\ostatne\\skola\\python\\bots\\rsbot",
+            "names": "recordeneedlertest1"
+        },
+        {
+            "time": 0.7720441818237305,
+            "type": "click",
+            "button": "Button.left",
+            "pos": [
+                1024,
+                318
+            ]
+        },
+        {
+            "time": 1.7581005096435547,
+            "type": "click",
+            "button": "Button.left",
+            "pos": [
+                1022,
+                235
+            ]
+        },
+        {
+            "time": 2.5921483039855957,
+            "type": "click",
+            "button": "Button.left",
+            "pos": [
+                1209,
+                253
+            ]
+        }
+    ]
+}
