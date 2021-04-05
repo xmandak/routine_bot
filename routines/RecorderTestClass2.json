@@ -1,0 +1,107 @@
+[
+    {
+        "time": 1.2830090522766113,
+        "type": "click",
+        "button": "Button.left",
+        "pos": [
+            907,
+            344
+        ]
+    },
+    {
+        "time": 2.651014566421509,
+        "type": "push key",
+        "button": "f",
+        "pos": null
+    },
+    {
+        "time": 2.6610143184661865,
+        "type": "push key",
+        "button": "g",
+        "pos": null
+    },
+    {
+        "time": 2.691014528274536,
+        "type": "push key",
+        "button": "d",
+        "pos": null
+    },
+    {
+        "time": 2.9610204696655273,
+        "type": "release key",
+        "button": "g",
+        "pos": null
+    },
+    {
+        "time": 3.181020736694336,
+        "type": "release key",
+        "button": "f",
+        "pos": null
+    },
+    {
+        "time": 3.181020736694336,
+        "type": "push key",
+        "button": "f",
+        "pos": null
+    },
+    {
+        "time": 3.381021022796631,
+        "type": "release key",
+        "button": "f",
+        "pos": null
+    },
+    {
+        "time": 3.581021308898926,
+        "type": "release key",
+        "button": "d",
+        "pos": null
+    },
+    {
+        "time": 4.661031007766724,
+        "type": "push key",
+        "button": "j",
+        "pos": null
+    },
+    {
+        "time": 4.833031415939331,
+        "type": "push key",
+        "button": "g",
+        "pos": null
+    },
+    {
+        "time": 5.1110429763793945,
+        "type": "release key",
+        "button": "j",
+        "pos": null
+    },
+    {
+        "time": 5.1110429763793945,
+        "type": "push key",
+        "button": "h",
+        "pos": null
+    },
+    {
+        "time": 5.3110432624816895,
+        "type": "release key",
+        "button": "g",
+        "pos": null
+    },
+    {
+        "time": 5.3110432624816895,
+        "type": "push key",
+        "button": "j",
+        "pos": null
+    },
+    {
+        "time": 5.511043310165405,
+        "type": "release key",
+        "button": "h",
+        "pos": null
+    },
+    {
+        "time": 5.731043577194214,
+        "type": "release key",
+        "button": "j",
+        "pos": null
+    }
+]

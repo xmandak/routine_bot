@@ -1,0 +1,80 @@
+[
+    {
+        "time": 0.9740555286407471,
+        "type": "click",
+        "button": "Button.left",
+        "pos": [
+            807,
+            346
+        ]
+    },
+    {
+        "time": 1.7440993785858154,
+        "type": "click",
+        "button": "Button.left",
+        "pos": [
+            924,
+            471
+        ]
+    },
+    {
+        "time": 2.28013014793396,
+        "type": "click",
+        "button": "Button.left",
+        "pos": [
+            819,
+            542
+        ]
+    },
+    {
+        "time": 2.8241615295410156,
+        "type": "click",
+        "button": "Button.left",
+        "pos": [
+            926,
+            289
+        ]
+    },
+    {
+        "type": "search image",
+        "number of images": 1,
+        "paths": "C:\\ostatne\\skola\\python\\bots\\rsbot",
+        "names": "recordeneedlertest1"
+    },
+    {
+        "time": 2.869163990020752,
+        "type": "click",
+        "button": "Button.left",
+        "pos": [
+            852,
+            415
+        ]
+    },
+    {
+        "time": 3.479198932647705,
+        "type": "click",
+        "button": "Button.left",
+        "pos": [
+            801,
+            496
+        ]
+    },
+    {
+        "time": 3.9752273559570312,
+        "type": "click",
+        "button": "Button.left",
+        "pos": [
+            649,
+            525
+        ]
+    },
+    {
+        "time": 4.8332765102386475,
+        "type": "click",
+        "button": "Button.left",
+        "pos": [
+            794,
+            343
+        ]
+    }
+]
