@@ -10,8 +10,10 @@ import win32api
 import pywinauto
 from pynput.mouse import Button, Controller
 from Recorder import Recorder
+from  Replay import Replay
 import json
 import os
+from windowcapture import WindowCapture
 from datetime import datetime
 MAIN_HWND = 0
 
@@ -133,15 +135,17 @@ def click_child(x, y, parent_name, child_name):
 
 
 def post_key(key, window_name=None, window_hWnd=None):
+    hex_char = hex(ord(key.upper()))
+    key = int(hex_char, 16)
     if window_name != 0:
         hWnd = win32gui.FindWindow(None, window_name)
     else:
         hWnd = window_hWnd
 
-    win32api.PostMessage(hWnd, win32con.WM_KEYDOWN, key, lParam_global)
+    win32api.PostMessage(hWnd, win32con.WM_KEYDOWN, key, 0)
     time.sleep(0.1)
     #win32api.PostMessage(hWnd, win32con.WM_CHAR, int(key)+32, 0)
-    #win32api.PostMessage(hWnd, win32con.WM_KEYUP, key, lParam_globaldfgh)
+    win32api.PostMessage(hWnd, win32con.WM_KEYUP, key, 0)
 
 def key_down(key, window_name=None, window_hWnd=None):
     if window_name != 0:
@@ -182,20 +186,24 @@ def call_recorder():
 
 def main():
 
-    recorder = Recorder('RecorderFinalTest2', 0, 131736)
+    # recorder = Recorder('RecorderFinalTestimgsearch', 0, 4719774)
+    player = Replay()
+    player.replay_begin(
+        'RecorderFinalTest3', "C:\\ostatne\\skola\\python\\bots\\rsbot\\routines\\RecorderFinalTestimgsearch.json", 0, 2032708)
 
     t = 5
     while t:
         print(t)
         time.sleep(1)
         t -= 1
-
-    recorder.buttons_recording_begin()
-    recorder.image_search(1, os.getcwd(), 'recordeneedlertest1')
-    recorder.buttons_recording_begin()
-    recorder.make_json()
-    print('Recording done.')
-
+    print(player.meta)
+    player.replay_actions()
+    # recorder.buttons_recording_begin()
+    # recorder.image_search(1, [os.getcwd()], ['NeedleTest1.PNG'])
+    # recorder.buttons_recording_begin()
+    # recorder.make_json()
+    # print('Recording done.')
+    print('Replaying done.')
     '''
     loop_time = time()
     while True:
@@ -271,17 +279,52 @@ def main():
         # parse the json
         file = json.load(jsonfile)
     file2 = file['meta']
-    print(file2[0][0])
+    print(file2[0][0]) 
     '''
 
 if __name__ == "__main__":
-    #main()
-    print(ord(' '))
-    print(int(0x51))
-    t = 5
-    while t:
-        print(t)
-        time.sleep(1)
-        t -= 1
-    post_key(0x41, 0, 328598)
+    main()
+    # key = 'a'
+    # hex_char = hex(ord(key.upper()))
+    # print(int(0x51))
+    # key = hex(ord(key.upper()))
+    # print(key)
+    #
+    # hex_str = "0x41"
+    # hex_int = int(hex_char, 16)
+    # print(hex(hex_int))
+    # t = 5
+    # while t:
+    #     print(t)
+    #     time.sleep(1)
+    #     t -= 1
+    # post_key('a', 0, 328716)
+    # wincap = WindowCapture(2032708)
+    # needle_img = cv.imread('NeedleTest2.PNG', cv.IMREAD_GRAYSCALE)
+    # haystack = cv.imread('ScreenGrab1.PNG', cv.IMREAD_GRAYSCALE)
+    # screen_grab = wincap.get_screenshot()
+    #
+    # grayValue = 0.07 * screen_grab[:, :, 2] + 0.72 * screen_grab[:, :, 1] + 0.21 * screen_grab[:, :, 0]
+    # gray_screen = grayValue.astype(np.uint8)
+    #
+    # cv.imwrite('ScreenGrab1.PNG', screen_grab)
+    # result = cv.matchTemplate(gray_screen, needle_img, cv.TM_CCOEFF_NORMED)
+    # locations = np.where(result >= 0.95)
+    # locations = list(zip(*locations[::-1]))
+    # print(locations)
+#     (601.0, 459.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
