@@ -18,10 +18,17 @@ class Recorder:
     routine_name = None
 
     def __init__(self, bot_name, window_name=None, window_hwnd = None):
+        script_dir = os.getcwd()
+        filepath = os.path.join(
+            script_dir,
+            'routines',
+            '{}.json'.format(bot_name)
+        )
 
         self.routine_name = bot_name
         self.meta_data = {
                 'routine name': bot_name,
+                'file path': filepath,
                 'window name': window_name,
                 'window hwnd': window_hwnd,
                 'date of creation': datetime.now().strftime("%m/%d/%Y, %H:%M:%S")
